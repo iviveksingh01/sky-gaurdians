@@ -1,0 +1,180 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global font and background colors */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+.sky{
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Navigation bar styling */
+.nav-bar {
+    background-color: #1a1a2e;
+    padding: 15px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-link img {
+    height: 50px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Section content */
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    background-color: #fff;
+}
+.content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+.content-text {
+    max-width: 600px;
+}
+.card {
+    background: #eee;
+    padding: 30px;
+    border-radius: 8px;
+}
+.title-text {
+    font-size: 2.5em;
+    color: #1a1a2e;
+}
+.p-text {
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Button styling */
+.btn {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn:hover {
+    background-color: #007bff;
+}
+
+/* Jet section styling */
+.fighter-jet-section, .tranport {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(170, 223, 220);
+}
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+/* Jet grid styling */
+.jet {
+
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    
+   
+}
+.jet:hover{
+    box-shadow: 0 0 15px rgba(26, 22, 234, 0.915);
+    color: blue;
+    transform: scale(1.1);
+}
+
+
+.jet-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    transition: 0.3s ease;
+}
+jet-image:hover{
+background-color: blue;
+transform: scale(1.1);
+}
+.jet-body {
+    padding: 20px;
+    background: white;
+}
+.jet-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+.jet-text {
+    font-size: 0.9em;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .section-content, .content-wrapper {
+        flex-direction: column;
+    }
+    .content-text, .image-column {
+        max-width: 100%;
+    }
+    .fighter-jet-section, .tranport {
+        padding: 30px 20px;
+    }
+} 
+.footer{
+    background-color: #3333;
+    counter-reset: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+footer-section h4{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
